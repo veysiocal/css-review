@@ -1,0 +1,42 @@
+/* section {
+    background: #ff1b68;
+} */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Combinator: Select h1 which is inside of #product-overview 
+It overrides h1 element selector too.
+*/
+#product-overview h1 {  
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+#product-overview {
+    background: #ff1b68;
+}
+
+.section-title {
+    color:#2ddf5c;
+    /* font-family: inherit; */
+} 
+/* class selectors override element selectors. .section.title class seleltor ile ikinci h1'in rengini değiştirdik.
+burda section-title h1 element selector'ünün üstünde olsa da aynı durum geçerli.
+
+Çünkü; class selector genel element selectoru her zaman ezer. Eğer ki aynı element selectoru iki kez kullanır isek;
+o zaman sırası önemli olur...
+
+Aynıo şekilde h1 etiketini inline css eklersek, o da class css'i ezecektir. So list of priority:
+1 - inline css
+2 - class css 
+3 - element css
+
+Dev. Tools'da da style incelediğimiz zaman en üstte inline, sonra class, sonra ise element selectorler görünür.
+
+// INHERIT:
+-- Inherit, style değerin parent elementlerden almasını sağlar. Örneğin; .section-title font-family: inherit vermez
+isem, h1 etiketi olduğundan genel h1 etiketinde geçerli olan font-famiy: 'Anton' özelliğini kullanır.
+Ancak, font-family: inherit dersem,, parent elementlere gider ve font-famiy özelliği varsa o değeri kullanır
+*/
