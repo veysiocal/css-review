@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+#product-overview {
+    background-image: url('../Section\ 3\ -\ Working\ with\ boxes/aa_css_box_model/freedom.jpg');
+    width: 100%;
+    height: 528px;
+    padding: 10px;
+}
+
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+    /* display: flex;
+    flex-direction: row;
+*/
+}
+
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: inline-block;
+    width: calc(100% - 72px);
+    vertical-align: middle;
+    text-align: right;
+    /* Because of li elements maken inline-block, it works like text in main-nav */
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav__item a {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--hosting a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--hosting a:hover,
+.main-nav__item--hosting a:active {
+    border: none;
+    color: #ff1b68;
+    background: white;
+}
+
+#plans {
+    /* text-align: center; */
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+.plans__article {
+    display: inline-block;
+    /* height: 400px; */
+    margin: 8px;
+    padding: 16px;
+    width: 30%;
+    background: #CDF8D8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.plans__article h2 {
+    opacity: 0.6;
+}
+
+.article-recommended {
+    background: #0D9A42;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+.article-recommended h1.first {
+    background: white;
+    color: #3A9263;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.article-recommended h2 {
+    color: black;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__features li {
+    padding: 8px 0;
+}
+
+.plans__article button {
+    background: #11331D;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    border: 1.5px solid #11331D;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.plans__article button:hover,
+.plans__article button:active {
+    background: white;
+    color: #11331d;
+}
+
+#about-us {
+    background: #FF335E;
+    padding: 32px;
+    margin-top: 80px;
+    color: white;
+}
+
+#about-us h1 {
+    text-align: center;
+}
+
+.about-us__ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 32px;
+    text-align: center;
+}
+
+.about-us__ul li {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.about-us__ul li p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-us__image{
+    background: #FFCDDB;
+    border: 1px solid black;
+    width: 110px;
+    height: 110px;
+    /* border-radius: 110px; */
+    border-radius: 50%;
+    margin: auto;
+}
+
+.main-footer {
+    background: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.main-footer ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer ul li a:hover,
+.main-footer ul li a:active {
+    color: blue;
+}
+/*
+ul {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+}
+li {
+    text-decoration: none;
+    margin-right: 10px;
+}
+a {
+    color: white;
+    text-decoration: none;
+} */
