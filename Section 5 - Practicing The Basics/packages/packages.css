@@ -1,0 +1,28 @@
+.package_card {
+    margin: 16px;
+    padding: 16px;
+    background: #CFF7D8;
+    width: 75%;
+    border: 5px solid black;
+}
+
+.package_card a {
+    text-decoration: none;
+}
+
+.package_card a h1 {
+    font-weight: bold;
+    color: black;
+}
+
+.package_card a h2 {
+    color: #9CA499;
+    opacity: 0.8;
+}
+
+.package_card a p {
+    border: 3px solid gray;
+    padding: 8px;
+    color: #888D8D;
+    background: white;
+}    
