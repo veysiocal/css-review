@@ -1,7 +1,6 @@
 let planButtons = document.querySelectorAll('.plans-div button');
 let backdrop = document.querySelector('.backdrop');
 let modal = document.querySelector('.modal');
-let modalConfirmButton = document.querySelector('.modal .modal__action');
 let modalCancelButton = document.querySelector('.modal__action--negative');
 
 planButtons.forEach(button => {
